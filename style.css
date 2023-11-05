@@ -1,0 +1,175 @@
+/********************
+
+    Mobile View
+
+********************/
+body {
+    width:100vw;
+    margin:0;
+}
+
+/* To have all images fit their container*/
+img {
+    width:100%;
+}
+
+/* cards with images and content */
+.top-cards{
+    margin:1em;
+}
+.banner-card, .feature-cards {
+    margin:2em 0.25em;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.top-cards h4 {
+    margin-bottom: 0.5em;
+}
+
+.top-cards h2 {
+    margin-top: 0;
+}
+
+.banner-content, .feature-content {
+    padding:1em;
+}
+.top-cards p {
+    margin-bottom: 2em;
+}
+.banner-link, .feature-link-mobile {
+    border: 1px solid black;
+    padding: 0.5em 1.5em;
+}
+
+.feature-link-desktop {
+    display:none;
+}
+
+/* Shop links on mobile only */
+.shop-links-mobile {
+    
+}
+.shop-links-mobile ul {
+    padding:0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shop-links-mobile ul li {
+    width:45%;
+    text-align:center;
+    padding: .75em 0;
+    margin: 0.25em;
+    background-color: blue;
+    color: white;
+    border-radius: 10%/50%;
+}
+
+/* Who's your favorite character icons */
+.fav-char {
+    text-align: center;
+}
+
+.fav-char ul {
+    padding:0;
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fav-char ul li {
+    width: 45%;
+
+}
+
+/* Fall content*/
+.fall-desktop, .fall-desktop-image {
+    display:none;
+}
+
+.fall-content {
+    margin:3em 1.25em;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.fall-link-mobile {
+    margin-top:1em;
+}
+
+/**********************
+
+    Desktop View
+
+***********************/
+@media (min-width:500px) {
+    main {
+        margin:1em 4em;
+    }
+    .top-cards {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    .banner-card {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .banner-image {
+        flex:2;
+    }
+    .banner-content {
+        flex:1;
+        background: #fef0ff;
+    }
+    .feature-cards {
+        flex:1;
+    }
+    .feature-image {
+        margin-bottom:1em;
+    }
+    .feature-content {
+        display:none;
+    }
+    .feature-link-desktop {
+        display:initial;
+    }
+    .shop-links-mobile {
+        display:none;
+    }
+    .fav-char ul li{
+        width:12%;
+    }
+    .fall-mobile-image, .fall-link-mobile {
+        display:none;
+    }
+    .fall-content {
+        position:relative;
+    }
+    .fall-desktop {
+        display:initial;
+        text-align:center;
+        width:33%;
+        position:absolute;
+        left:35%;
+        z-index: 1;
+    }
+    .fall-desktop h4 {
+        margin-bottom:0.5em; 
+    }
+    .fall-desktop h2 {
+        margin-top:0;
+    }
+    .fall-link-desktop {
+        border: 1px solid black;
+        padding: 0.5em 1.5em;
+    }
+}
